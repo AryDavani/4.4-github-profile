@@ -3,12 +3,13 @@
 }
 
 body {
-  margin: 0 auto;
+  padding: 0;
+  margin: 0;
   font-family: 'Helvetica';
 }
 
 nav {
-  background-color: black;
+  background-color: #24292E;
 }
 .container {
   display: flex;
@@ -17,7 +18,7 @@ nav {
 .nav-list {
   display: flex;
   justify-content: center;
-  color: white;
+  color: #C8C9CA;
   padding: 0.5%;
 }
 .nav-list li {
@@ -30,4 +31,33 @@ nav {
 .picture {
   width: 100%;
   border-radius: 5px;
+}
+.left-side {
+  flex: 1 4 100%;
+}
+
+.add-bio {
+  font-size: 16px;
+}
+.right-side {
+  flex: 1 1 100%;
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 24px;
+  color: rgb(42, 96, 215);
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.repo-list {
+  padding: 30px;
+  margin: 5px;
+  border-top: 1px gray solid;
 }

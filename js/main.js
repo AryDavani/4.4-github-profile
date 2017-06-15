@@ -17,12 +17,15 @@
       var rightSide = document.querySelector('.right-side');
       for (var i = 0; i < data.length; i++) {
         var divTag = document.createElement('div');
+        divTag.className = 'repo-list';
         var aTag = document.createElement('a');
+        var pTag = document.createElement('p');
+        pTag.textContent = moment(data[i].updated_at).fromNow();
         aTag.href = data[i].html_url;
         aTag.textContent = data[i].name;
         divTag.appendChild(aTag);
+        divTag.appendChild(pTag);
         rightSide.appendChild(divTag);
-        console.log(divTag);
 
       }
     });
