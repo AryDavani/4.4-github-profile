@@ -1,0 +1,33 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Helvetica';
+}
+
+nav {
+  background-color: black;
+}
+.container {
+  display: flex;
+  padding: 0 200px;
+}
+.nav-list {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 0.5%;
+}
+.nav-list li {
+  list-style: none;
+  margin: 1%;
+}
+.profile-pic {
+  width: 230px;
+}
+.picture {
+  width: 100%;
+  border-radius: 5px;
+}
