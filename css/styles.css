@@ -8,7 +8,12 @@ body {
   font-family: 'Helvetica';
 }
 
-nav {
+.octicon-mark-github {
+  color: white;
+  font-size: 20px;
+}
+
+.main-nav {
   background-color: #24292E;
 }
 .container {
@@ -41,7 +46,7 @@ nav {
 }
 .right-side {
   flex: 1 1 100%;
-  margin-left: 20px;
+  margin: 20px;
 }
 
 a {
@@ -60,4 +65,25 @@ a:hover {
   padding: 30px;
   margin: 5px;
   border-top: 1px gray solid;
+}
+
+.right-side-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.right-side-nav li {
+  text-decoration: none;
+  list-style: none;
+  padding-bottom: 14px;
+}
+.right-side-nav li a {
+  font-size: 16px;
+  color: gray;
+  padding-bottom: 20px;
+
+}
+.right-side-nav li a:hover {
+  text-decoration: none;
+  border-bottom: 2px red solid;
 }
