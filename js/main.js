@@ -4,9 +4,11 @@
   // use github api token for development purposes
   // will not be present in production
   var headers = {};
-  if (githubToken) {
+  try (githubToken) {
     // set the AJAX header to send the token
     headers['Authorization'] = 'token ' + githubToken;
+  } catch (e){
+
   }
 
   var url = 'https://api.github.com/users/AryDavani/repos';
@@ -25,11 +27,8 @@
         aTag.textContent = data[i].name;
         divTag.appendChild(aTag);
         divTag.appendChild(pTag);
-        rightSide.appendChild(divTag);
-
+        rightSide.appendChild(divTag)
       }
     });
-
   });
-
 }());
