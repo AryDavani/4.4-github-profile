@@ -4,10 +4,10 @@
   // use github api token for development purposes
   // will not be present in production
   var headers = {};
-  try (githubToken) {
+  try {
     // set the AJAX header to send the token
     headers['Authorization'] = 'token ' + githubToken;
-  } catch (e){
+  } catch(e){
 
   }
 
