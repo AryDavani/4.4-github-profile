@@ -14,7 +14,6 @@
   var url = 'https://api.github.com/users/AryDavani/repos';
   fetch(url, {headers: headers}).then(function(response){
     response.json().then(function(data){
-      console.log(data);
 
       var rightSide = document.querySelector('.right-side');
       for (var i = 0; i < data.length; i++) {
